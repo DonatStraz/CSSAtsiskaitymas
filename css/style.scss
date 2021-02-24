@@ -1,0 +1,159 @@
+/*Colors*/
+$primary-color:#fb4c47;
+$secondary-color:#035755;
+$body-text:#4B4F51; 
+$background-color:#f3f3f3; 
+$white-color:#FFFFFF;
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color:$background-color;
+}
+
+.radius{
+    border-radius:2em;
+}
+h4{
+    color:$primary-color;
+}
+
+h4, h1, h2, h3{
+    font-weight:700;
+}
+
+h1{
+    font-size:36px;
+}
+
+h2{
+    font-size:27px;
+}
+
+h3{
+    font-size:20px;
+}
+
+h4{
+    font-size:18px;
+}
+
+p{
+    color:$body-text;
+    font-size:18px;
+    font-weight:500;
+}
+
+.button{
+    background-color:$primary-color;
+    border:none;
+    padding:8px 25px;
+    color:$white-color;
+    border-radius:2em;
+    font-size:10px;
+
+}
+.button:hover{
+    background-color:#D9423D;
+}
+.navigation{
+    margin:0px 50px;
+    .nav-list{
+        .nav-item{
+            display:inline-block;
+            list-style:none;
+            margin:20px 10px;
+           a{
+            text-decoration:none;
+            color:$secondary-color;
+            font-weight:600;
+            transition: opacity .25s ease-in-out;
+            -moz-transition: opacity .25s ease-in-out;
+            -webkit-transition: opacity .25s ease-in-out;
+           }
+           a:hover{
+               color:$primary-color;
+           }
+        }
+    }
+}
+
+.first-block, .second-block{
+    background-color:$white-color;
+    padding:2em 0em 0em 2em;
+    .image{
+        img{
+            max-width:100%;
+        }
+    }
+    button{
+        margin-top:140px;
+    }
+    
+}
+
+.second-block{
+    .info{
+        margin-top:100px;
+        margin-right:70px;
+    }
+    h2{
+        color:$secondary-color;
+    }
+    h2:nth-child(1){
+        color:$primary-color;
+        
+    }
+}
+
+.fifth-block{
+    img{
+        max-width:100%;
+    }
+}
+
+.h-spacing{
+    text-align:center;
+    h2{
+        color:$primary-color;
+        line-height:8px;
+    }
+    h1{
+        color:$secondary-color;
+        
+    }
+}
+
+.cards{
+    margin-top:50px;
+    .card{
+        background-color:$white-color;
+        text-align:center;    
+        border:none;
+        border-bottom:solid 5px $primary-color;
+        height:300px;
+
+        .image{
+            margin-top:20px;
+            height:300px;   
+            img{
+                max-width:150px; 
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }    
+    }
+}
+
+.cards-two{
+    .card{
+        height:230px;
+    }
+}
+
+@media (max-width:990px){
+   .cards{
+       .card{
+       margin-top:20px;
+       }
+   }
+}
